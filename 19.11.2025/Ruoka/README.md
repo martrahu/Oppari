@@ -4,7 +4,7 @@
 
 **dnn.py** failissa on malli jossa em dataa käytetään DNN kouluttamiseen. Learning curve on "terveemmän" näköinen mitä human vs notHuman tapauksessa.
 
-<img src="../assets/learningCurve.png">
+<img src="../assets/learningCurveRuoka.png">
 
 
 Päästään accuracy tasolle 0.95. Tästä tuskin tulee olettaa että ollaan mitattu onnistuneesti ruokailun jälkeen tapahtuvia muutoksia esim verensokerin nousua. Veikkaan että kysessä on pikemminkin mittausteknisista syistä johtuva artefakta...

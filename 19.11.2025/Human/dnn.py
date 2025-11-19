@@ -9,7 +9,7 @@ from keras.optimizers import  Adam
 from matplotlib import pyplot as plt
 
 ## Ladataan tiedosto
-df=pd.read_csv('dfAll.csv')
+df=pd.read_csv('HumanData.csv')
 
 # Erotellaan X ja Y
 X = df.drop(['Y'], axis=1) 
@@ -41,17 +41,17 @@ model.compile(
 ## Treenaaminen
 history=model.fit(
     trainX, trainY,
-    #validation_data=(testX, testY),  #kokeilun vuoksi test laitettu validaatioksi
-    epochs=12,
+    validation_data=(testX, testY),  #kokeilun vuoksi test laitettu validaatioksi
+    epochs=50,
     batch_size=8,
     verbose=1
 )
 
 
-"""plt.plot(history.history['loss'],'b',label='trainingLoss')
+plt.plot(history.history['loss'],'b',label='trainingLoss')
 plt.plot(history.history['val_loss'],'r',label='valLoss')
 plt.legend()
-plt.show()"""
+plt.show()
 
 ## Mallin evaluaatio
 loss, acc=model.evaluate(testX, testY)
