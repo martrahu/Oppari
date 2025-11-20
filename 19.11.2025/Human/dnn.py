@@ -41,17 +41,17 @@ model.compile(
 ## Mallin kouluttaminen
 history=model.fit(
     trainX, trainY,
-    validation_data=(testX, testY),  #kokeilun vuoksi test laitettu validaatioksi
+    #validation_data=(testX, testY),  #kokeilun vuoksi test laitettu validaatioksi
     epochs=50,
     batch_size=8,
     verbose=1
 )
 
 
-plt.plot(history.history['loss'],'b',label='trainingLoss')
+"""plt.plot(history.history['loss'],'b',label='trainingLoss')
 plt.plot(history.history['val_loss'],'r',label='valLoss')
 plt.legend()
-plt.show()
+plt.show()"""
 
 ## Mallin evaluaatio
 loss, acc=model.evaluate(testX, testY)
