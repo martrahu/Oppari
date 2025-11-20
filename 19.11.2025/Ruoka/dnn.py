@@ -9,7 +9,7 @@ from keras.optimizers import  Adam
 from matplotlib import pyplot as plt
 
 ## Ladataan tiedosto
-df=pd.read_csv('RuokaData.csv')
+df=pd.read_csv('RuokaData.csv') #S0-value1, S0-value2, S0-value3, S0-value4 jouduttu poistamaan kun arvot puuttuu enemmistöistä näytteistä
 
 # Erotellaan X ja Y
 X = df.drop(['Y'], axis=1) 
@@ -19,7 +19,7 @@ Y = df['Y']
 trainX, testX, trainY, testY = train_test_split(X, Y, test_size=0.2, stratify=Y)
 
 ## Skaalaus
-scaler = MinMaxScaler(feature_range=(-1, 1))
+scaler = MinMaxScaler()
 trainX = scaler.fit_transform(trainX)
 testX=scaler.transform(testX) 
 
@@ -28,16 +28,17 @@ model = Sequential([
     Input(shape=(X.shape[1],)),
     Dense(64, activation='relu'),
     Dense(32, activation='relu'),
+    Dense(32, activation='relu'),
     Dense(1, activation='sigmoid')
 ])
 
 model.compile(
-    optimizer=Adam(learning_rate=0.001),
+    optimizer='adam',
     loss='binary_crossentropy',
     metrics=['accuracy']
 )
 
-## Treenaaminen
+## Mallin kouluttaminen
 history=model.fit(
     trainX, trainY,
     #validation_data=(testX, testY),  #kokeilun vuoksi test laitettu validaatioksi
