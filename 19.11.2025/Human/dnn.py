@@ -22,7 +22,7 @@ trainX, testX, trainY, testY = train_test_split(X, Y, test_size=0.2, stratify=Y)
 scaler = MinMaxScaler()
 trainX = scaler.fit_transform(trainX)
 testX=scaler.transform(testX)
-#testX=np.random.random(testX.shape) #randomilla ylioppiminen tapahtuu odotetusti ja accuracy odotetust 0,5 tasoa
+#testX=np.random.random(testX.shape) #randomilla ylioppiminen tapahtuu odotetusti ja accuracy odotetusti 0,5 tasoa
 
 ## Mallin rakennus
 model = Sequential([
