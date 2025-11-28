@@ -1,7 +1,7 @@
-##Alla valikoima artikkeleista joita olen läpi käynyt. Jokaisesta lähteestä olen tuonut esiin pointteja joilla voisi olla vaikutusta meiden tekemiseen. Tietopalat ovat annotoituina (Lähde, Yleinen, Valonlähde, Sensori, Mittaus, Analyysi) riippuen aluetta mitä koskee.
+##Alla valikoima artikkeleista joita olen läpi käynyt. Jokaisesta lähteestä olen tuonut esiin pointteja joilla voisi olla vaikutusta meiden tekemiseen. Tietopalat ovat annotoituina (Lähde, Yleinen, Valonlähde, Sensori, Mittaus, Analyysi) riippuen aluetta mitä koskee.##
 
 
-##**[Fundamentals of Pulse Oximetry](https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/34096486)**
+##**[Fundamentals of Pulse Oximetry](https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/34096486)**##
 
 **@Yleinen**
 
@@ -11,7 +11,7 @@ Alla oleva kuva vetää aika hyvin yhteen sen mitä yritetään mitata.
 
 
 
-##**[Measuring Heart Rate and Blood Oxygen Levels for Portable and Wearable Devices](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjosN7yi4iRAxULT1UIHffbIVsQFnoECBcQAQ&url=https%3A%2F%2Fwww.digikey.com%2FSite%2FGlobal%2FLayouts%2FDownloadPdf.ashx%3FpdfUrl%3DBE60CF3D30E74A0C93FBFA7167A0AF07&usg=AOvVaw3tPO0B5ye7d8fulc4z13-5&opi=89978449microchip-measuring-heart-rate)**
+##**[Measuring Heart Rate and Blood Oxygen Levels for Portable and Wearable Devices](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjosN7yi4iRAxULT1UIHffbIVsQFnoECBcQAQ&url=https%3A%2F%2Fwww.digikey.com%2FSite%2FGlobal%2FLayouts%2FDownloadPdf.ashx%3FpdfUrl%3DBE60CF3D30E74A0C93FBFA7167A0AF07&usg=AOvVaw3tPO0B5ye7d8fulc4z13-5&opi=89978449microchip-measuring-heart-rate)**##
 
 **@Yleinen**
 
@@ -27,7 +27,7 @@ Jokaisella laitteella on oma kalibrointikäyrä, joka on saatu monien mittauksie
 
 
 
-##**[Measuring the Oxygen Content of Blood with LEDs](https://www.led-professional.com/products/featured/measuring-the-oxygen-content-of-blood-with-leds)**
+##**[Measuring the Oxygen Content of Blood with LEDs](https://www.led-professional.com/products/featured/measuring-the-oxygen-content-of-blood-with-leds)**##
 
 **@Yleinen**
 
@@ -49,7 +49,7 @@ Although the component has the highest light sensitivity at a wavelength of 940 
 
 
 
-##**[Near-infrared spiroximetry: noninvasive measurements of venous saturation in piglets and human subjects](https://pmc.ncbi.nlm.nih.gov/articles/PMC3786737)**
+##**[Near-infrared spiroximetry: noninvasive measurements of venous saturation in piglets and human subjects](https://pmc.ncbi.nlm.nih.gov/articles/PMC3786737)**##
 
 **@Lähde**
 
@@ -75,7 +75,7 @@ Laskimoveren saturaationmittaria ei ole nykyhetkellä saatavilla (johtuu siitä 
 
 
 
-##**[Comparative assessment of healthy tissue oxygenation using near-infrared imaging, transcutaneous oxygen measurement, and plethysmography](https://www.nature.com/articles/s41598-025-15767-2)**
+##**[Comparative assessment of healthy tissue oxygenation using near-infrared imaging, transcutaneous oxygen measurement, and plethysmography](https://www.nature.com/articles/s41598-025-15767-2)**##
 
 **@Lähde**
 
@@ -108,7 +108,7 @@ Kun verenvuoto estetään (painetaan valtimo mekaanisesti kiinni) niin verenkier
 
 
 
-##**[Using reflectometryf ora PPG waveform](https://www.analog.com/media/en/technical-documentation/design-notes/using-reflectometry-for-a-ppg-waveform.pdf)**
+##**[Using reflectometryf ora PPG waveform](https://www.analog.com/media/en/technical-documentation/design-notes/using-reflectometry-for-a-ppg-waveform.pdf)**##
 
 **@Mittaus**
 
@@ -124,7 +124,7 @@ The time delay between the systolic and diastolic peaks shortens with the subjec
 
 
 
-##**[Eveliina Seppälä progradu jatkuva-aikainen vitaalitoimintojen monitorointi](https://oulurepo.oulu.fi/handle/10024/14980)**
+##**[Eveliina Seppälä progradu jatkuva-aikainen vitaalitoimintojen monitorointi](https://oulurepo.oulu.fi/handle/10024/14980)**##
 
 **@Analyysi**
 
@@ -134,7 +134,7 @@ Alla kaava jolla intensiteettisuhteesta R lasketaan saturaatio. vakiot a, b ja c
 
 
 
-##**[Developing a device for monitoring saturation in blood](https://watermark02.silverchair.com/201_1_online.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAABZ0wggWZBgkqhkiG9w0BBwagggWKMIIFhgIBADCCBX8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdXBqwikEtrKfJlq7AgEQgIIFUFwrlAMvGDF_nuMmERH4C3ne_HrDGSsVYLXhXDEw0fCq5vXOK_uwSLVu3kMzrtfVTTc_EoiYMvCnXY0MiIc4TogRyH9kn7EYHK7gP4KicJiI_15WpiZ66RFudNk1_WFjLBy6IxGBaAA-innlErbLCYZUJhesnXddM9dCyca6-4vyzqQNs8rx17LgLyu3xpmu0-VTYdi5XpAB4ELouyImonf1zd-wrHzh83E7S_gap0u9cvA_Ujtg1SLZVXoTMw2KxMeCvrqe-nMFqbjJtbyI7rGdGP1t8kbC1CTRBgbmqGgc4zeDUXqTgqUdiJ2TAFh_eb-b2WxQ1MtR9RObpIMApp91ljgV1dNTrs3p7Qr5fe8UZVwLLhsoHRVmLJTgJxLTLjsT7msr-g8QZljFaeM05sZd2trpmz_qju7JoTFXxU9H_yJ_zpkPnPKWaqrxE6TNIv16pnpVsoHN-R53Gpz2neQpLm3ohqxeiOx9WGKqpDJzf73P8T273UF58OLrFMWafzA6rHqGDaOKsKx3P6ZgwtaRvLxlz4ROZ4TmhzjaipDymU-_W88094jdFuMsKX3UhZH5MpB54-Ts6qBRETAkKaiBpfgylSOGRQyLH59sU4XuKNSe6KhdQkdn82yPF7wwMRtDCgoIF4t5mGgDS3j4jjlRzftQepsWcvGAq-in2ctPKA22CTUBWA-R4QB7SDAT-GR_EXgoSbJOqP6Wf77RmmHKfNN-DI2foHutA2OfiAkSS01u_116AnDdhZU21F96ACbTc526ATnhM8olYhRzHGNHW0k755_AaLao5e9Rl55ndf4YM7ISipEn1ywMdl9jNT0WmYVbBV1pGadS-hklelDE7O4_o1PlLdRgr-8d2Ni5-X4a1YMBk3qtjePlS49d4oclxy8G_zo_81Ni6UIVr04o6YbUZe6fl_hYEVfwMWrLJLpsNeVydYF5QF6ilYW6G7ZJDcoIZyjAhYji2Wkp4xNo0S0fKhzJEzoUy4dkXZiPlTpjErUkIpibLleAzrPJR6ITFPANrfy0PaEyBNrFLAHJ4b2WUjdHBt8pS1hjeKjcf8k3PUaCvDdtSbVSMCeSusiOkyPBz-8z8UtS8xkuBpCtmnuMg67d_bEI1VzsMQ68r-3UzGJkL-yGk1RbFxe2wwXqLrYt8mbfND5bMkF6KDNrqoki64CYQeoowGw4yAQfTqSrPwikePK7jT-YHIiFa8dpHeDKNyY1tKII9ulnEl9dmweS5xIruO07t8VYQLmsKLhDmXz6LL-Tnzb7qeYlxMn8JFGj2e-jw2OTTL8Gf4JFsG6dF5aUkt0pq1lShx7DcEogHDKmjlkZXvy_n-ffbVVxusySxr4pit_jFcjLB3G-DVX58mVNCjgbxqiIMGA9D33Ijcs7PpJ5aU4mBT1hXYY_HRxAJEDXYCwdYr9zOau-3EK6HGp_nYupsQEve1Dc-yCCgYZ81sXTYNcv9Vb_MnVoSy5GdlukiZGFERA0G8OY0gNDq6WwVpCMD19j87e5scg7DC8C71Z05jzLBy0wsAZYcLOfTK6dymE20ycrjJCBe1P1nvQ0--vuWmsNyrb1Kaul_cVmMbbMXCtTJkBIrLbWOPHjUIqh21u9-uAoDecpkCO_TNBET3iF9iNWuO5eqOHtakQFiiKruFGvl15Yw6g9T4f4ar5l8AJ_PQ4XQupzbenrmPJPyy-yj1BvuzrGb2UEfoOaNoq6ErUcfTu6tlKA6syyFPUmqWkooGInzNiZGWp2CyLEj-X_kW6NzlX_0tfIucqtMbKIT8-VucPUcOPTH77m_irn4jcehHB5pJw)**
+##**[Developing a device for monitoring saturation in blood](https://watermark02.silverchair.com/201_1_online.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAABZ0wggWZBgkqhkiG9w0BBwagggWKMIIFhgIBADCCBX8GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdXBqwikEtrKfJlq7AgEQgIIFUFwrlAMvGDF_nuMmERH4C3ne_HrDGSsVYLXhXDEw0fCq5vXOK_uwSLVu3kMzrtfVTTc_EoiYMvCnXY0MiIc4TogRyH9kn7EYHK7gP4KicJiI_15WpiZ66RFudNk1_WFjLBy6IxGBaAA-innlErbLCYZUJhesnXddM9dCyca6-4vyzqQNs8rx17LgLyu3xpmu0-VTYdi5XpAB4ELouyImonf1zd-wrHzh83E7S_gap0u9cvA_Ujtg1SLZVXoTMw2KxMeCvrqe-nMFqbjJtbyI7rGdGP1t8kbC1CTRBgbmqGgc4zeDUXqTgqUdiJ2TAFh_eb-b2WxQ1MtR9RObpIMApp91ljgV1dNTrs3p7Qr5fe8UZVwLLhsoHRVmLJTgJxLTLjsT7msr-g8QZljFaeM05sZd2trpmz_qju7JoTFXxU9H_yJ_zpkPnPKWaqrxE6TNIv16pnpVsoHN-R53Gpz2neQpLm3ohqxeiOx9WGKqpDJzf73P8T273UF58OLrFMWafzA6rHqGDaOKsKx3P6ZgwtaRvLxlz4ROZ4TmhzjaipDymU-_W88094jdFuMsKX3UhZH5MpB54-Ts6qBRETAkKaiBpfgylSOGRQyLH59sU4XuKNSe6KhdQkdn82yPF7wwMRtDCgoIF4t5mGgDS3j4jjlRzftQepsWcvGAq-in2ctPKA22CTUBWA-R4QB7SDAT-GR_EXgoSbJOqP6Wf77RmmHKfNN-DI2foHutA2OfiAkSS01u_116AnDdhZU21F96ACbTc526ATnhM8olYhRzHGNHW0k755_AaLao5e9Rl55ndf4YM7ISipEn1ywMdl9jNT0WmYVbBV1pGadS-hklelDE7O4_o1PlLdRgr-8d2Ni5-X4a1YMBk3qtjePlS49d4oclxy8G_zo_81Ni6UIVr04o6YbUZe6fl_hYEVfwMWrLJLpsNeVydYF5QF6ilYW6G7ZJDcoIZyjAhYji2Wkp4xNo0S0fKhzJEzoUy4dkXZiPlTpjErUkIpibLleAzrPJR6ITFPANrfy0PaEyBNrFLAHJ4b2WUjdHBt8pS1hjeKjcf8k3PUaCvDdtSbVSMCeSusiOkyPBz-8z8UtS8xkuBpCtmnuMg67d_bEI1VzsMQ68r-3UzGJkL-yGk1RbFxe2wwXqLrYt8mbfND5bMkF6KDNrqoki64CYQeoowGw4yAQfTqSrPwikePK7jT-YHIiFa8dpHeDKNyY1tKII9ulnEl9dmweS5xIruO07t8VYQLmsKLhDmXz6LL-Tnzb7qeYlxMn8JFGj2e-jw2OTTL8Gf4JFsG6dF5aUkt0pq1lShx7DcEogHDKmjlkZXvy_n-ffbVVxusySxr4pit_jFcjLB3G-DVX58mVNCjgbxqiIMGA9D33Ijcs7PpJ5aU4mBT1hXYY_HRxAJEDXYCwdYr9zOau-3EK6HGp_nYupsQEve1Dc-yCCgYZ81sXTYNcv9Vb_MnVoSy5GdlukiZGFERA0G8OY0gNDq6WwVpCMD19j87e5scg7DC8C71Z05jzLBy0wsAZYcLOfTK6dymE20ycrjJCBe1P1nvQ0--vuWmsNyrb1Kaul_cVmMbbMXCtTJkBIrLbWOPHjUIqh21u9-uAoDecpkCO_TNBET3iF9iNWuO5eqOHtakQFiiKruFGvl15Yw6g9T4f4ar5l8AJ_PQ4XQupzbenrmPJPyy-yj1BvuzrGb2UEfoOaNoq6ErUcfTu6tlKA6syyFPUmqWkooGInzNiZGWp2CyLEj-X_kW6NzlX_0tfIucqtMbKIT8-VucPUcOPTH77m_irn4jcehHB5pJw)**##
 
 **@Valonlähde**
 
