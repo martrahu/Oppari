@@ -108,7 +108,7 @@ Kun verenvuoto estetään (painetaan valtimo mekaanisesti kiinni) niin verenkier
 
 
 
-## **[Using reflectometryf ora PPG waveform](https://www.analog.com/media/en/technical-documentation/design-notes/using-reflectometry-for-a-ppg-waveform.pdf)**
+## **[Using reflectometry for a PPG waveform](https://www.analog.com/media/en/technical-documentation/design-notes/using-reflectometry-for-a-ppg-waveform.pdf)**
 
 **@Mittaus**
 
@@ -158,7 +158,42 @@ Kaava jolla laskettiin ajassa tapahtuvaa valon absorption muutoksia (tämä siis
 <img src="assets/MuutosAjassa.png">
 
 
+## **[Research on Multiple Spectral Ranges with Deep Learning for SpO2 Measurement](https://www.researchgate.net/publication/357703578_Research_on_Multiple_Spectral_Ranges_with_Deep_Learning_for_SpO2_Measurement)**
+
+**@Yleinen**
+Tutkimuksessa todettiin että 1DCNN:lla, jossa 6 aallonpituutta, saadan parempia tuloksia mitä sormioksimetrilla (jossa 2 aallonpituutta).
+
+**@Valonlähde**
+
+Tässä tutkimuksessa käytettiin xenon lamppua jolla rangea 400-1100nm.
+
+**@Sensori**
+
+Käytettiin kahta sensoria: AS7262 and AS7263. AS7262 captures six wavelengths of 450 nm, 500 nm, 550 nm, 570 nm, 600 nm, and 650 nm, and its full width at half maximum (FWHM) is 40 nm. AS7263 captures the remaining six wavelengths, which are 610 nm,
+680 nm, 730 nm, 760 nm, 810 nm, and 860 nm, and its full width at half maximum (FWHM) is 20 nm. Eli yhteensä mitattiin 12 eri aallonpituutta.
+
+**@Mittaus**
+
+The light intensity received by measuring thin skin tissue is about 40 to 60 decibels higher than the light received by the reflection system.
+
+**@Analyysi**
+
+Tässä tutkimuksessa käytettiin 1D-CNN verkkoa.
+
+Aallonpituuksilla <=610nm ei ollut roolia SpO2 mittaamisessa. Tämä on loogista sillä Hbb ja HbO2 valon absorption ero on suurin spektrin osuudessa ~600nm-1200nm.
+
+Alla olevassa kuvassa käytetyn verkon arkitehtuuri.
+
+<img src="assets/1dcnn.png">
+
+Käytettiin GridSearchCV ja Bayesiania hyperparametrien optimoinnissa. Niistä BO performoi jatkuvasti paremmin.
 
 
+[Multiwavelength pulse oximetry: theory for the future](www.ncbi.nlm.nih.gov/pubmed/18048900)
 
+**@Yleinen**
+Our theory (teoria siitä että käyettäisiin useita aallonpituuksia) of multiwavelength pulse oximetry can be expected to be useful for solving almost all problems in pulse oximetry such as accuracy, motion artifact, low-pulse amplitude, response delay, and errors using reflection oximetry which will expand the application of pulse oximetry.
 
+**@Analyysi**
+
+Based on the theory, the three-wavelength method eliminated the effect of tissue and improved the accuracy of Spo2. The five-wavelength method eliminated the effect of venous blood and improved motion artifact elimination.
