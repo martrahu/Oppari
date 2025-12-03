@@ -197,3 +197,15 @@ Our theory (teoria siitä että käyettäisiin useita aallonpituuksia) of multiw
 **@Analyysi**
 
 Based on the theory, the three-wavelength method eliminated the effect of tissue and improved the accuracy of Spo2. The five-wavelength method eliminated the effect of venous blood and improved motion artifact elimination.
+
+[How to design a better pulse oximeter: Implementation](https://www.embedded.com/how-to-design-a-better-pulse-oximeter-implementation)
+
+**@Valonlähde**
+
+For heart rate PPG measurement, a combination of a single large PD and multiple power efficient green LEDs has been adopted by many HR device manufacturers to be used on places where there is limited blood flow. Green LEDs are chosen due to their high rejection of motion artifacts. 
+
+[Multiparameter Vital Signs Monitoring Is Easier Than Ever Before](https://electronicsmaker.com/multiparameter-vital-signs-monitoring-is-easier-than-ever-before)
+
+**@Valonlähde**
+
+A green LED with wavelength around 540 nm is generally preferred in heart rate monitoring. It yields the best PPG signal as it has a higher modulation index than red or IR LEDs.

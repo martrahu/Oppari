@@ -1,0 +1,1 @@
+mitattu 5 eri väriä vasten tulostetulta paperilta. Senno laite oli stationaarisesti.
