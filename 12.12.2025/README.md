@@ -1,4 +1,4 @@
-**Kansio _Mittaukset11.12** - mittaukset 2 eri Senno konfiguraatiolla, Toinen 4 ledia näkyvällä spektrilla ja toinen IR ledit eri asetuksilla. Tähän astiset mallit menee nopeasti testidatalla 100%:iin johtuen labelin sisäisestä vähäisestä vaihtelusta (opetusdata ja testidata on saman mittauksien aikana saatu). Tähän voi olla ratkaisuna mallin karsiminen pienemmänksi tai mittausdatan käsittely ennen neuroverkon kouluttamista, esimerkiksi kohinan lisääminen tai eri reatureiden suhteuden korostaminen jako- tai kertolaskulla. DNN kouluttaminen IR:lla otetulla datasetilla on sisäistä vaihtelevuutta enemmän, siksi DNN kouluttaminen vaatii muutaman epoch kierroksen lisää.
+**Kansio _Mittaukset11.12** - mittaukset 2 eri Senno konfiguraatiolla, Toinen 4 ledia näkyvällä spektrilla ja toinen IR ledit eri asetuksilla. Tähän astiset mallit menee nopeasti testidatalla 100%:iin johtuen labelin sisäisestä vähäisestä vaihtelusta (opetusdata ja testidata on saman mittauksien aikana saatu). Tähän voi olla ratkaisuna mallin karsiminen pienemmänksi tai mittausdatan käsittely ennen neuroverkon kouluttamista, esimerkiksi kohinan lisääminen tai eri featureiden suhteiden korostaminen jako- tai kertolaskulla. DNN kouluttaminen IR:lla otetulla datasetilla on sisäistä vaihtelevuutta enemmän, siksi DNN kouluttaminen vaatii muutaman epoch kierroksen lisää.
 
 Toiseksi ko ogelmassa on labeleiden järjestyksellä merkitystä - korkean konsentraation määritteleminen puhtaaksi vedeksi on isompi virhe mitä matalan konsentraation määritteleminen vedeksi. Tämä tuo ongelmaan mukaan ominaisuuden joka yleensä on regressiotyylisissä ongelmissa. Tähän voi kokeilla regressio-DNN tai luokittelu DNN jossa kouluttamisessa penalisoidaan "isompaa" virhettä.
 
@@ -26,7 +26,7 @@ Alla kokeiltavaksi joitakin malleja edellisiin pointteihin liittyen:
 
 **Malli10** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
 
-**Malli11** - luokittelu DNN jossa synteettisiä featureita
+**Malli11** - luokittelu DNN jossa synteettisiä featureita (S1/S0, S3/S2, S1/S3, S2/S0)
 
 **Malli12** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
 
