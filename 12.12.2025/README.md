@@ -1,4 +1,4 @@
-**Kansio _Mittaukset11.12** - mittaukset 2 eri Senno konfiguraatiolla, Toinen 4 ledia näkyvällä spektrilla ja toinen IR ledit eri asetuksilla. Tähän astiset mallit menee nopeasti testidatalla 100%;iin johtuen labelin sisäisestä vähäisestä vaihtelusta (opetusdata ja testidata on saman mittauksien aikana saatu). Tähän voi olla ratkaisuna mallin karsiminen pienemmänksi tai mittausdatan käsittely ennen neuroverkon kouluttamista, esimerkiksi kohinan lisääminen tai eri reatureiden suhteuden korostaminen jako- tai kertolaskulla.
+**Kansio _Mittaukset11.12** - mittaukset 2 eri Senno konfiguraatiolla, Toinen 4 ledia näkyvällä spektrilla ja toinen IR ledit eri asetuksilla. Tähän astiset mallit menee nopeasti testidatalla 100%:iin johtuen labelin sisäisestä vähäisestä vaihtelusta (opetusdata ja testidata on saman mittauksien aikana saatu). Tähän voi olla ratkaisuna mallin karsiminen pienemmänksi tai mittausdatan käsittely ennen neuroverkon kouluttamista, esimerkiksi kohinan lisääminen tai eri reatureiden suhteuden korostaminen jako- tai kertolaskulla. DNN kouluttaminen IR:lla otetulla datasetilla on sisäistä vaihtelevuutta enemmän, siksi DNN kouluttaminen vaatii muutaman epoch kierroksen lisää.
 
 Toiseksi ko olgelmassa on labeleiden järjestyksellä merkitystä - korkean konsentraation määritteleminen puhtaaksi vedeksi on isompi virhe mitä matalan konsentraation määritteleminen vedeksi. Tämä tuo ongelmaan mukaan ominaisuuden joka yleensä on regressiotyylisissä ongelmissa. Tähän voi kokeilla regressio-DNN tai luokittelu DNN jossa kouluttamisessa penalisoidaan "isompaa" virhettä.
 
@@ -25,8 +25,11 @@ Alla kokeiltavaksi joitakin malleja edellisiin pointteihin liittyen:
 **Malli9** - LogReg classifier
 
 **Malli10** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
+**Malli11** - luokittelu DNN jossa synteettisiä featureita
 
-Malleissa 2, 4, 6, 8 ja 10 on noiseAmount muuttujaa jonka arvoa voi säätää paremman generalisaation saamiseksi. Malli on muistettava kouluttaa uudestaan mikäli arvoa on muudettu.
+**Malli12** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
+
+Malleissa 2, 4, 6, 8, 10 ja 12 on noiseAmount muuttujaa jonka arvoa voi säätää paremman generalisaation saamiseksi. Malli on muistettava kouluttaa uudestaan mikäli arvoa on muudettu.
 
 
 **Testaaminen:**

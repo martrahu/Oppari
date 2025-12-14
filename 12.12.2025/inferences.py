@@ -15,7 +15,7 @@ def GiveFinalResults(conf,truth,sample):
     resultDictDNN={}
     resultDictclas={}
 
-    for i in range(1,11):
+    for i in range(1,13):
 
         scaler = joblib.load(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/scaler.pkl')
         scaled=scaler.transform(sample)
@@ -28,10 +28,23 @@ def GiveFinalResults(conf,truth,sample):
             model.load_model(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/malli.json')
             res=model.predict(scaled)
             resultDictclas['Malli'+str(i)]=res[0]
-        else:
+        elif i>=9 and i<=10:
             model=joblib.load(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/malli.lg')
             res=model.predict(scaled)
             resultDictclas['Malli'+str(i)]=res[0]
+        else:
+            model=tf.keras.models.load_model(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/malli.keras')
+
+            newSample=sample.copy()
+
+            newSample[0][0]=sample[0][1]/max(sample[0][0],1e-5)
+            newSample[0][1]=sample[0][3]/max(sample[0][2],1e-5)
+            newSample[0][2]=sample[0][1]/max(sample[0][3],1e-5)
+            newSample[0][3]=sample[0][2]/max(sample[0][0],1e-5)
+
+            scaled=scaler.transform(newSample)
+            res=model.predict(scaled)
+            resultDictDNN['Malli'+str(i)]=[res.argmax(),res[0][truth]/sum(res[0])]
 
     resultDictDNN = {k: v for k, v in sorted(resultDictDNN.items(), key=lambda item: item[1][1], reverse=True)}
 
@@ -48,7 +61,7 @@ def GiveFinalResults(conf,truth,sample):
 
 
 
-#test=np.array([[241512,125158,327660,32545]])
+test=np.array([[241512,125158,327660,32545]])
 
-#GiveFinalResults(1,0,test)
+GiveFinalResults(1,0,test)
 
