@@ -25,6 +25,7 @@ Alla kokeiltavaksi joitakin malleja edellisiin pointteihin liittyen:
 **Malli9** - LogReg classifier
 
 **Malli10** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
+
 **Malli11** - luokittelu DNN jossa synteettisiä featureita
 
 **Malli12** - sama mikä edellinen mutta noiseAmountilla saa kohinaa lisätä opetusdataan.
