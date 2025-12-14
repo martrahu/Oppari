@@ -61,7 +61,7 @@ def GiveFinalResults(conf,truth,sample):
 
 
 
-test=np.array([[241512,125158,327660,32545]])
+#test=np.array([[241512,125158,327660,32545]])
 
-GiveFinalResults(1,0,test)
+#GiveFinalResults(1,0,test)
 
