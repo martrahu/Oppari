@@ -30,11 +30,13 @@ Malleissa 2, 4, 6, 8 ja 10 on noiseAmount muuttujaa jonka arvoa voi säätää p
 **Testaaminen:**
 
 Importataan inferences.py oleva funktio GiveFinalResults():
-from inferences import GiveFinalResults
+
+**from inferences import GiveFinalResults**
 
 GiveFinalResults(conf,truth,sample)
-conf - arvo joko nr 1 tai 2, riippuen Senno konfiguraatiosta, 1 neljällä ledillä ja 2 kahdella IR ledillä (viittaan Villen discord viestiin 11.12.2025 klo 15:41).
 
-truth - joko 0, 1 tai 2 riippuen testattavana olevasta liuoksesta. Tätä arvoa tarvitaan DNN mallien paremmusjärjestykseen laittamiseen.
+**conf** - arvo joko nr 1 tai 2, riippuen Senno konfiguraatiosta, 1 neljällä ledillä ja 2 kahdella IR ledillä (viittaan Villen discord viestiin 11.12.2025 klo 15:41).
 
-sample - 2D array jossa 4 elementtiä S0, S1, S2 ja S3
+**truth** - joko 0, 1 tai 2 riippuen testattavana olevasta liuoksesta. Tätä arvoa tarvitaan DNN mallien paremmusjärjestykseen laittamiseen.
+
+**sample** - 2D array jossa 4 elementtiä S0, S1, S2 ja S3
