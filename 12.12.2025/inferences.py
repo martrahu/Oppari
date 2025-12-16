@@ -19,7 +19,12 @@ def GiveFinalResults(conf,truth,sample):
 
         scaler = joblib.load(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/scaler.pkl')
         scaled=scaler.transform(sample)
-        if i<=6:
+        if i>=3 and i<=4:
+            model=tf.keras.models.load_model(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/malli.keras')
+            res=model.predict(scaled)
+            res=np.array([[res[0][0],0,0]])
+            resultDictDNN['Malli'+str(i)]=[res.argmax(),res[0][truth]/sum(res[0])]
+        elif i<=6:
             model=tf.keras.models.load_model(get_current_file_path()+'Malli'+str(i)+'/glucose_0'+str(conf)+'/malli.keras')
             res=model.predict(scaled)
             resultDictDNN['Malli'+str(i)]=[res.argmax(),res[0][truth]/sum(res[0])]
@@ -48,11 +53,20 @@ def GiveFinalResults(conf,truth,sample):
 
     resultDictDNN = {k: v for k, v in sorted(resultDictDNN.items(), key=lambda item: item[1][1], reverse=True)}
 
-    print('\nDNN Tulosjärjestys:')
+    print('\nLuokitelu DNN Tulosjärjestys:')
+    regStr=""
     for e in resultDictDNN:
-        print(e, 'tulos:',resultDictDNN[e][0], '  truth prob:',resultDictDNN[e][1])
+        if e=='Malli3' or e=='Malli4':
+            regStr+=e+ ' tulos: '+str(resultDictDNN[e][0])+ '  truth prob:'+str(resultDictDNN[e][1])+'\n'
+        else:
+            print(e, 'tulos:',resultDictDNN[e][0], '  truth prob:',resultDictDNN[e][1])
 
+    print('\nRegressio tulokset:')
+    print(regStr)
     print('\nClassifier tulokset:')
+
+
+
 
     for e in resultDictclas:
         print(e, 'tulos:',resultDictclas[e])
@@ -61,7 +75,7 @@ def GiveFinalResults(conf,truth,sample):
 
 
 
-#test=np.array([[241512,125158,327660,32545]])
+test=np.array([[241512,125158,327660,32545]])
 
-#GiveFinalResults(1,0,test)
+GiveFinalResults(1,2,test)
 
