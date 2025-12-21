@@ -6,12 +6,12 @@ Testidatan tarkkuus pysyy korkeana vaikka opetusdataan on lisätty kohinaa. Esim
 Tarkistamalla neuroverkkoon sisään menevää dataa huomataan että jotkut featuret erottaa aika hyvin veden sokerilioksesta. Esim alla on kuva jossa histogrammina S0/S1 arvot veden ja sokeriliuksen mittauksissa (noiseAmount 0):
 
 
-<img source="../assets/m1_s0s1.png">
+<img source="./assets/m1_s0s1.png">
 
 
 Kaikki featuret eivät kuitenkaan ole näin erottelevia, esim S3/S2 arvoissa on kohtalaista päällekkäisyyttä:
 
-<img source="../assets/m1_s3s2.png">
+<img source="./assets/m1_s3s2.png">
 
 
 Joululoman jälkeen onkin mielenkiintoista käyttää ko datalla koulutettua mallia reaaliajassa.
