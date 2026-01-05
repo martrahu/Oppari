@@ -6,6 +6,11 @@ from keras.models import Sequential
 from keras.layers import Input, Dense
 from keras.optimizers import Adam
 import joblib
+import pathlib 
+
+def get_current_file_path():     
+    file_path = str(pathlib.Path(__file__).parent.resolve())  +'\\'   
+    return file_path
 
 # Black - 0, Blue - 1, Green - 2, White - 3, Yellow - 4
 
@@ -26,7 +31,7 @@ def AntaaLabelDf(files, y):
     dfLabel=pd.DataFrame(columns=dfAll.columns)
 
     for i in range(len(files)):
-        dfArr=pd.read_csv('./raw/'+files[i]+'.txt', delimiter= ';')
+        dfArr=pd.read_csv(get_current_file_path()+'./raw/'+files[i]+'.txt', delimiter= ';')
         dfLabel[dfLabel.columns[i]]=dfArr[dfArr.columns[1]]
 
     dfLabel['Y']=y
@@ -42,7 +47,7 @@ dfAll=pd.concat(labelLists)
 
 dfAll.reset_index(drop=True, inplace=True)
 
-dfAll.to_csv('AllData.csv', index=False) 
+dfAll.to_csv(get_current_file_path()+'AllData.csv', index=False) 
 
 dfOneHotencoded = pd.get_dummies(dfAll, columns=['Y'])
 
@@ -58,7 +63,7 @@ trainX, testX, trainY, testY = train_test_split(X, Y, test_size=0.2, stratify=Y)
 scaler = StandardScaler()
 trainX = scaler.fit_transform(trainX)
 testX=scaler.transform(testX)
-joblib.dump(scaler, 'scaler.pkl')
+joblib.dump(scaler, get_current_file_path()+'scaler.pkl')
 
 ## Mallin rakennus
 model = Sequential([
@@ -82,7 +87,7 @@ history=model.fit(
     verbose=1
 )
 
-model.save('mittaus1.keras')
+model.save(get_current_file_path()+'mittaus1.keras')
 
 ## Mallin evaluaatio
 loss, acc=model.evaluate(testX, testY)
