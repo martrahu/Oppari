@@ -9,24 +9,23 @@ def get_current_file_path():
     return file_path
 
 
-model=tf.keras.models.load_model(get_current_file_path()+'malli.keras')
+model=tf.keras.models.load_model(get_current_file_path()+'malli1.keras')
 scaler = joblib.load(get_current_file_path()+'scaler.pkl')
 
 def GiveResult(values):
 
+    temp=values[0][:3]
+    values=[temp]
+
     newSample=[]
-    """newSample.append([])
+    newSample.append([])
     for k in range(len(values[0])):
-        for j in range(len(values[0])):
+        for j in range(k,len(values[0])):
             if k==j:
                 continue
             newSample[0].append(values[0][k]/max(values[0][j],1e-5))
-    """
     
-    newSample.append([])
-    newSample[0].append(values[0][1]/max(values[0][0],1e-5))
-    newSample[0].append(values[0][2]/max(values[0][0],1e-5))
-    newSample[0].append(values[0][3]/max(values[0][0],1e-5))
+    
 
     scaled=scaler.transform(newSample)
     

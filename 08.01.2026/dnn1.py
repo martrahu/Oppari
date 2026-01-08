@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import pathlib
 from util import GetDfAllSynt
 from tensorflow.keras.regularizers import l2
+from keras.callbacks import  EarlyStopping, ReduceLROnPlateau
+
 
 noiseAmount =0.0
 
@@ -20,9 +22,8 @@ def get_current_file_path():
 
 dfAll=GetDfAllSynt(noiseAmount)
 
-dfAll.drop(['S0/S1','S0/S2','S0/S3' , 'S1/S2' ,'S1/S3' ,'S2/S1' ,'S2/S3','S3/S1', 'S3/S2'],axis=1,inplace=True)
 
-print(dfAll)
+#print(dfAll)
 
 dfOneHotencoded = pd.get_dummies(dfAll, columns=['Y'])
 
@@ -47,9 +48,11 @@ joblib.dump(scaler, get_current_file_path()+'scaler.pkl')
 ## Mallin rakennus
 model = Sequential([
     Input(shape=(X.shape[1],)),
-    #Dense(8, activation='relu',kernel_regularizer=l2(0.001)),
-    #Dense(8, activation='relu',kernel_regularizer=l2(0.001)),
-    Dense(8, activation='relu',kernel_regularizer=l2(0.001)),
+    Dense(16, activation='relu',kernel_regularizer=l2(0.001)),
+    Dense(16, activation='relu',kernel_regularizer=l2(0.001)),
+    Dense(16, activation='relu',kernel_regularizer=l2(0.001)),
+    Dense(16, activation='relu',kernel_regularizer=l2(0.001)),
+    Dense(16, activation='relu',kernel_regularizer=l2(0.001)),
     Dense(labelCount, activation='softmax')
 ])
 
@@ -59,16 +62,21 @@ model.compile(
     metrics=['accuracy']
 )
 
+early_stop = EarlyStopping(monitor='val_loss', mode='min', patience=5,restore_best_weights=True)
+reduce_lr = ReduceLROnPlateau(monitor='val_accuracy', mode='max', factor=0.5, patience=3, min_lr=1e-5)
+
 ## Mallin kouluttaminen
 history=model.fit(
     trainX, trainY,
     validation_data=(testX, testY),  
-    epochs=15,
+    epochs=70,
     batch_size=32,
-    verbose=1
+    verbose=1,
+    callbacks=[early_stop, reduce_lr]
+
 )
 
-model.save(get_current_file_path()+'malli.keras')
+model.save(get_current_file_path()+'malli1.keras')
 
 ## Mallin evaluaatio
 loss, acc=model.evaluate(testX, testY)
@@ -76,7 +84,7 @@ loss, acc=model.evaluate(testX, testY)
 plt.plot(history.history['loss'], 'b', label="train")
 plt.plot(history.history['val_loss'], 'r', label="val")
 plt.legend()
-#plt.show()
+plt.show()
 
 print(f"Loss: {loss}")
 print(f"Acc: {acc}")
