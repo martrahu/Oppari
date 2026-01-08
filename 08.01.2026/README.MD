@@ -9,13 +9,12 @@ Koulutuksessa käytetty featuret: S0/S1, S0/S2, S1/S2. Käänteisarvot jätetty 
 
 Histogrameista ei selvästi erottelee vettä ja liosta:
 
-<img source="./assets/hist.png">
+<img src="./assets/hist.png">
 
 
 Opiskelukäyrä:
 
-<img source="./assets/trainingCurve1.png">
-
+<img src="./assets/trainingCurve1.png">
 
 
 Kokeilin myös alkeellista signaalinkäsittelyä EMA-tyylisellä high-pass filterilla (5Hz rajana). Siitä en mitään järkevää tulosta saanut, mahdollisesti tarvitaan syvempää osaamista DSP:sta...?
