@@ -1,4 +1,4 @@
-***Kansio raw** - Tässä mitattu petrimaljassa alapuolelta kelluvan levyn kanssa. Nestettä  aluksi 20ml, johon lisätty 5ml pisara kerrallaan. Tehty kolme kertaa peräkkäin.
+**Kansio raw** - Tässä mitattu petrimaljassa alapuolelta kelluvan levyn kanssa. Nestettä  aluksi 20ml, johon lisätty 5ml pisara kerrallaan. Tehty kolme kertaa peräkkäin.
 
 SLOT_3 on molemmassa mittausnäytteessä (vesi ja sokerilios), konstantti arvo 6553200, johtunee sensorin saturoitumisesta kun kovempaa virtaa LED:iin laitettu. S3 jätetty datasta pois.
 
