@@ -9,12 +9,12 @@ Koulutuksessa käytetty featuret: S0/S1, S0/S2, S1/S2. Käänteisarvot jätetty 
 
 Histogrameista ei selvästi erottelee vettä ja liosta:
 
-<img source="/assets/hist.png">
+<img source="./assets/hist.png">
 
 
 Opiskelukäyrä:
 
-<img source="/assets/trainingCurve1.png">
+<img source="./assets/trainingCurve1.png">
 
 
 
