@@ -2,20 +2,20 @@
 
 Raakadatassa on kaikki slotit hyvin erotettavissa. Myös ovat loogisessa järjestyksessä (vesi toisessa reunassa ja voimakkain konsentraatio toisessa reunassa, muut vahvuudet jäjestyksessä niiden välissä)
 
-<img src="../assets/rawS0.png">
+<img src="./assets/rawS0.png">
 
 Myös jotkut synteettiset featuret ovat kohtalaisen hyvin eroteltavissa, toiset taas menee päälekkäin.
 
 <p float="left">
-  <img src="../assets/s0s1.png" width="100" />
-  <img src="../assets/s0s2.png" width="100" /> 
-  <img src="../assets/s0s3.png" width="100" />
+  <img src="./assets/s0s1.png" width="100" />
+  <img src="./assets/s0s2.png" width="100" /> 
+  <img src="./assets/s0s3.png" width="100" />
 </p>
 
 <p float="left">
-  <img src="../assets/s1s2.png" width="100" />
-  <img src="../assets/s1s3.png" width="100" /> 
-  <img src="../assets/s2s3.png" width="100" />
+  <img src="./assets/s1s2.png" width="100" />
+  <img src="./assets/s1s3.png" width="100" /> 
+  <img src="./assets/s2s3.png" width="100" />
 </p>
 
 
@@ -23,7 +23,7 @@ Myös jotkut synteettiset featuret ovat kohtalaisen hyvin eroteltavissa, toiset 
 
 Koulutuskäyrässä menee training ja valuaatio käyrät tutun tapaan käsikädessä loppuun asti:
 
-<img src="../assets/trainingCurve1.png">
+<img src="./assets/trainingCurve1.png">
 
 
 **dnn2.py** - Regressio DNN. Koulutuksessa käytetty konsentraatiota 0, 12.5 ja 100 (vahvuudet 25 ja 50 jätetty pois). Malli tallennettu 'malli2.keras'. Antaa arvon väliltä 0-100 (=mitä luulee olevan liuoksen konsentraatio)
