@@ -7,15 +7,15 @@ Raakadatassa on kaikki slotit hyvin erotettavissa. Myös ovat loogisessa järjes
 Myös jotkut synteettiset featuret ovat kohtalaisen hyvin eroteltavissa, toiset taas menee päälekkäin.
 
 <p float="left">
-  <img src="./assets/s0s1.png" width="100" />
-  <img src="./assets/s0s2.png" width="100" /> 
-  <img src="./assets/s0s3.png" width="100" />
+  <img src="./assets/s0s1.png" width="300" />
+  <img src="./assets/s0s2.png" width="300" /> 
+  <img src="./assets/s0s3.png" width="300" />
 </p>
 
 <p float="left">
-  <img src="./assets/s1s2.png" width="100" />
-  <img src="./assets/s1s3.png" width="100" /> 
-  <img src="./assets/s2s3.png" width="100" />
+  <img src="./assets/s1s2.png" width="300" />
+  <img src="./assets/s1s3.png" width="300" /> 
+  <img src="./assets/s2s3.png" width="300" />
 </p>
 
 
