@@ -1,4 +1,4 @@
-**Kansio raw** - Hb mittaukset. Vahvin konsentraatio 1mg/ml josta laimennettu 0.5mg/ml, 0.25mg/ml ja 0.125mg/ml. Lisäksi vesimittaukset.
+**Kansio raw** - Hb mittaukset. Vahvin konsentraatio 1mg/ml josta tehty laimennukset: 0.5mg/ml, 0.25mg/ml ja 0.125mg/ml. Lisäksi vesimittaukset. Yhteensä siis 5 eri labelia.
 
 Raakadatassa on kaikki slotit hyvin erotettavissa. Myös ovat loogisessa järjestyksessä (vesi toisessa reunassa ja voimakkain konsentraatio toisessa reunassa, muut vahvuudet jäjestyksessä niiden välissä)
 
@@ -19,7 +19,7 @@ Myös jotkut synteettiset featuret ovat kohtalaisen hyvin eroteltavissa, toiset 
 </p>
 
 
-**dnn1.py** - Luokittelu DNN, labelit 0-4, jossa 0 on vesi ja 4 Hb100. Päästään val_acc 1,0 tasoon 15 epochilla. Koulutuksessa käytetty 6 synteettista featurea (kts edellä olevat kuvat). Koulutettu malii tallennettu nimellä 'malli1.keras'.
+**dnn1.py** - Luokittelu DNN, labelit 0-4, jossa 0 on vesi ja 4 Hb100. Päästään val_acc 1,0 tasoon 15 epochilla. Koulutuksessa käytetty 6 synteettista featurea (kts edellä olevat kuvat). Koulutettu malli tallennettu nimellä 'malli1.keras'.
 
 Koulutuskäyrässä menee training ja valuaatio käyrät tutun tapaan käsikädessä loppuun asti:
 <img src="./assets/trainingCurve1.png">
